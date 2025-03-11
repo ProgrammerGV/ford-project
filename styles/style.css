@@ -73,6 +73,7 @@ main {
     align-items: center;
     margin-top: 110px;
     width: 100%; 
+    padding-bottom: 80px; 
 }
 
 .video-lancamento {
@@ -98,7 +99,7 @@ iframe {
 
 .imagem-home {
     max-width: 100%;
-    padding-top: 100px;    
+    padding-top: 0;    
 }
 
 .paragrafo-main {
