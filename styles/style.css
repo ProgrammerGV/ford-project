@@ -115,6 +115,7 @@ iframe {
 
 .card-info {
     margin-top: 10px;
+    display: flex;
 }
 
 .card-info label {
