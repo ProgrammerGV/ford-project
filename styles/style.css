@@ -20,11 +20,6 @@ body {
     margin: 0;
 }
 
-head {
-
-}
-
-
 header{
     display: flex;
     flex-direction: row ;
@@ -77,83 +72,6 @@ main {
     padding-bottom: 80px; 
 }
 
-.video-lancamento {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; 
-    height: 0;
-    overflow: hidden;
-}
-
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.cards-carro {
-    width: 50%;
-    border-spacing: 20px; 
-}
-
-.cards-carro td {
-    padding: 10px;
-    text-align: center;
-    vertical-align: top; 
-    border: 1px solid #ddd; 
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-}
-
-.cards-carro-imagem {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.card-info {
-    margin-top: 10px;
-    display: flex;
-}
-
-.card-info label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #333;
-}
-
-.descricao {
-    font-size: 18px;
-    color: #007BFF;
-    margin-bottom: 5px;
-}
-
-.valor {
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 10px;
-}
-
-.info-icon {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-
-}
-
-.imagem-home {
-    max-width: 100%;
-    padding-top: 0;    
-}
-
-.paragrafo-main {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.8rem;
-}
 
 footer {
     background: #1b357e;
@@ -214,83 +132,4 @@ footer {
 .imagem-logo-footer {
     width: 80%;
     height: 80%;
-}
-
-@media (max-width: 768px){
-    header {
-        flex-direction: row;
-        align-items: center;
-        padding: 10px;
-    }
-    .logo-ford {
-        width: 100px;
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .links-header {
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .site-link-title {
-        font-size: 14px;
-    }
-
-    .cards-carro {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .cards-carro td {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .imagem-home {
-        width: 100%;
-    }
-
-    footer {
-        flex-direction: row;
-        padding: 10px;
-    }
-
-    .footer-container {
-        flex-direction: row;
-        gap: 5px;
-    }
-
-    .paragrafo-footer {
-        font-size: 0.5rem;
-        width: 54px;
-    }
-
-    .redes-sociais-footer {
-        width: 20px;
-        height: 20px;
-    }
-
-    .logo-ford-footer {
-        margin-right: 0;
-        margin-top: 10px;
-    }
-
-    .copyright {
-        font-size: 0.3rem;
-    }
-
-    .imagem-logo-footer {
-        width: 50px;
-    }
-
-    
-}   
-
-@media (max-width: 480px) {
-    .cards-carro td {
-        width: 100%; 
-    }
 }

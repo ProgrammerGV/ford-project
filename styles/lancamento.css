@@ -1,0 +1,97 @@
+.video-lancamento {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cards-carro {
+    width: 50%; 
+    table-layout: fixed; 
+    border-spacing: 20px; 
+}
+
+
+.cards-carro td {
+    width: 33.33%; 
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cards-carro-imagem {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;    
+    gap: 10px; 
+}
+
+.card-info p {
+    margin: 5px 0; 
+    text-align: center;
+}
+
+.card-info label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.descricao {
+    font-size: 18px;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.valor {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.info-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.butao-comparar-carro {
+    background-color: #0661e1;
+    color: white;
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    margin-top: 25px;
+    transition: transform 0.3s ease, margin 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.butao-comparar-carro:hover {
+    background-color: #0067f8;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.checkbox {
+    transform: scale(1.5);
+    margin: 10px 0;
+}
