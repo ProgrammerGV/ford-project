@@ -3,8 +3,20 @@
     padding-top: 0;    
 }
 
+.paragrafo-imagem {
+    max-width: 80%;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-style: solid ;
+    border-radius: 25px;
+    border-color: rgba(128, 128, 128, 0.243);
+    border-width: 1px;
+    padding: 10px;
+}
+
 .paragrafo-main {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 0;
     font-size: 0.8rem;
 }

@@ -14,12 +14,23 @@ iframe {
     height: 100%;
 }
 
+.paragrafo-imagem {
+    max-width: 80%;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-style: solid ;
+    border-radius: 25px;
+    border-color: rgba(128, 128, 128, 0.243);
+    border-width: 1px;
+    padding: 10px;
+}
+
 .cards-carro {
     width: 50%; 
     table-layout: fixed; 
     border-spacing: 20px; 
 }
-
 
 .cards-carro td {
     width: 33.33%; 
@@ -30,6 +41,7 @@ iframe {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 .cards-carro-imagem {
     width: 100%;

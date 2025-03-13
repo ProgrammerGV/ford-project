@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+
+.imagem-carro {
+    width: 50%; 
+    max-width: 500px;
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.formulario {
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    gap: 0px; 
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+}
+
+.formulario textarea {
+    resize: vertical; 
+    min-height: 100px; 
+}
+
+.formulario input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
