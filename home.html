@@ -20,11 +20,16 @@
         </nav>
     </header>
     <main>
-        <a href="lancamento.html">
-            <img class="imagem-home" src="assets/imagem_1.jpg" alt="Imagem do carro 'Ranger Black'">
-        </a>
-        <p class="paragrafo-main">Essa é a nova Ranger Ford 2022. Verifique novidades <a href="lancamento.html">aqui</a>.</p>
-        <h3 class="paragrafo-imagem">O Ford Ranger 2022 combina potência, robustez e tecnologia para enfrentar qualquer desafio. Com um design imponente, motor eficiente e recursos avançados de segurança e conectividade, essa picape é ideal tanto para o trabalho quanto para a aventura.</h3>
+        <div id="carousel">
+        </div>
+        <div id="carousel-title">
+        </div>
+        <script>
+            carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
+            carouselArr.push(new Carousel("imagem_2.jpg","Ford a nossa história","#"));
+            carouselArr.push(new Carousel("imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
+            Carousel.Start(carouselArr);
+        </script>
     </main>
     <footer>
         <div class="footer-container">
