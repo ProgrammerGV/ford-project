@@ -19,7 +19,7 @@ class Carousel {
             
             Carousel._createCarousel();
             Carousel._updateCarousel();
-            Carousel._interval = setInterval(Carousel._autoNext, 100000);
+            Carousel._interval = setInterval(Carousel._autoNext, 2000);
         } else {
             console.error("Method Start needs a non-empty Array Variable.");
         }
@@ -136,6 +136,6 @@ class Carousel {
 
     static _resetInterval() {
         clearInterval(Carousel._interval);
-        Carousel._interval = setInterval(Carousel._autoNext, 10000);
+        Carousel._interval = setInterval(Carousel._autoNext, 2000);
     }
 }
