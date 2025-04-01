@@ -29,9 +29,9 @@
             <tr>
                 <td>
                     <div>
-                        <img class="cards-carro-imagem" src="assets/xls 2.2 diesel.jpg" alt="XLS 2.2 Diesel">
+                        <img class="cards-carro-imagem" src="./assets/xls 2.2 diesel.jpg" alt="XLS 2.2 Diesel">
                         <div class="card-info">
-                            <input class="checkbox" type="checkbox" name="carro" value="xls-2.2-diesel"> 
+                            <input class="checkbox" type="checkbox" name="carro" value="xls-2.2-diesel" onchange="SetCarToCompare(this, new Car('XLS 2.2 Diesel 4X4 AT 2022', 220690, 511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', './assets/xls 2.2 diesel.jpg'));"> 
                             <p class="descricao">Ranger XLS 2.2 Diesel 2022</p>
                             <img class="info-icon" src="assets/info.png" alt="Mais informações">
                         </div>
@@ -40,9 +40,9 @@
                 </td>
                 <td>
                     <div>
-                        <img class="cards-carro-imagem" src="assets/XL Cabine.jpg" alt="XL Cabine">
+                        <img class="cards-carro-imagem" src="./assets/XL Cabine.jpg" alt="XL Cabine">
                         <div class="card-info">
-                            <input class="checkbox" type="checkbox" name="carro" value="xl-cabine"> 
+                            <input class="checkbox" type="checkbox" name="carro" value="xl-cabine" onchange="SetCarToCompare(this, new Car('XL Cabine Simples 2.2 Diesel 4X4 MT 2022', 183850, 511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', './assets/XL Cabine.jpg'));"> 
                             <p class="descricao">Ranger XL Cabine Simples 2.2 Diesel 2022</p>
                             <img class="info-icon" src="assets/info.png" alt="Mais informações">
                         </div>
@@ -51,11 +51,10 @@
                 </td>
                 <td>
                     <div>
-                        <img class="cards-carro-imagem" src="assets/storm.jpg" alt="Storm">
+                        <img class="cards-carro-imagem" src="./assets/storm.jpg" alt="Storm">
                         <div class="card-info">
-                            <input class="checkbox" type="checkbox" name="carro" value="storm"> 
+                            <input class="checkbox" type="checkbox" name="carro" value="storm" onchange="SetCarToCompare(this, new Car('Storm 3.2 Diesel 4X4 AT 2022', 222790, 511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', './assets/storm.jpg'));"> 
                             <p class="descricao">Ranger Storm 3.2 Diesel 2022</p>
-                            
                             <img class="info-icon" src="assets/info.png" alt="Mais informações">
                         </div>
                         <p class="valor">R$ 169.750,30</p>
@@ -63,7 +62,7 @@
                 </td>
             </tr>
         </table>
-        <button class="butao-comparar-carro">Comparar Carros</button>
+        <button class="butao-comparar-carro" onclick="ShowCompare()">Comparar Carros</button>
     </main>
     <footer>
         <div class="footer-container">
@@ -85,5 +84,13 @@
             <img class="imagem-logo-footer" src="assets/ford-96.png" alt="Logo Ford">
         </div>
     </footer>
+    <div id="compare-popup" class="popup-container">
+        <div class="popup-content">
+        <span class="close-btn" onclick="HideCompare()">&times;</span>
+        <h2>Comparação de Carros</h2>
+        <div id="compare-cars-container" class="compare-cars">
+        </div>
+        </div>
+    </div>
 </body>
 </html>
