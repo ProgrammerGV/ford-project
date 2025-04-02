@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lançamento</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/contato.css">
     <link rel="stylesheet" href="/styles/responsive.css">
     <link rel="icon" href="./assets/faviconford.png">
-    <script src="./scripts/form.js"></script>
 </head>
 <body>
     <header>
@@ -20,15 +19,24 @@
         </nav>
     </header>
     <main>
+        <div id="popupcontato" class="popup-hidden">
+            <div id="popupcontatocontent">
+                <span class="popup-icon">✓</span>
+                <h2>Mensagem enviada!</h2>
+                <p>Agradecemos seu contato. Responderemos em breve!</p>
+                <button onclick="fecharPopup()">Fechar</button>
+            </div>
+        </div>
         <div class="container">
             <img src="/assets/xls 2.2 diesel.jpg" alt="Imagem do carro XLS 2.2 diesel" class="imagem-carro">
+
             <form action="" method="get" class="formulario">
                 <label for="name">NOME</label>
                 <input type="text" id="name" placeholder="Nome completo">
                 <label for="e-mail">E-MAIL</label>
                 <input type="email" id="e-mail" placeholder="E-mail">
                 <label for="telefone">TELEFONE</label>
-                <input type="text" id="telefone" placeholder="Número para contato">
+                <input type="text" id="telefone" placeholder="Número para contato" maxlength="15">
                 <label for="tipodecontato">Tipo de contato</label>
                 <select id="tipodecontato" name="tipodecontato">
                     <option value="elogio">Elogio</option>
@@ -37,7 +45,7 @@
                 </select>
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" placeholder="Escreva aqui sua mensagem..." required></textarea>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" onclick="Enviar(event)">
             </form>
         </div>
     </main>
@@ -61,5 +69,6 @@
             <img class="imagem-logo-footer" src="assets/ford-96.png" alt="Logo Ford">
         </div>
     </footer>
+    <script src="./scripts/form.js"></script>
 </body>
 </html>

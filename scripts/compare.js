@@ -40,12 +40,11 @@ function SetCarToCompare(el, carClass) {
 }
 
 function ShowCompare() {
-    if (carArr.length < 2) {
+    if (carArr.length !== 2 ) {
         alert("Por favor, selecione exatamente 2 carros para comparar");
         return;
     }
     
-    // Limita a comparação a 2 carros
     const carsToCompare = carArr.slice(0, 2);
     
     UpdateCompareTable(carsToCompare);
@@ -82,7 +81,6 @@ function UpdateCompareTable(cars) {
     });
 }
 
-// Fechar o popup quando clicar fora do conteúdo
 window.onclick = function(event) {
     const popup = document.getElementById("compare-popup");
     if (event.target === popup) {
