@@ -28,7 +28,9 @@ function Enviar(event) {
     if (!nome || !email || !telefone || !mensagem) {
         alert("Preencha todos os campos obrigatórios!");
         return;
-    }
+    } else if (!checkbox1.checked) {
+        alert("É preciso aceitar os termos e condições!")
+    } else {
 
     const novoContato = new Contato(nome, email, telefone, tipoContato, mensagem);
     console.log(novoContato);
@@ -39,19 +41,13 @@ function Enviar(event) {
         <p>Sua mensagem foi enviada com sucesso.</p>
         <button onclick="fecharPopup()">Fechar</button>
     `;
+    }
 }
 
 const formButton = document.getElementById("botao");
 
 var checkbox1 = document.getElementById("checkbox1");
 
-checkbox1.addEventListener( 'change', function() {
-    if(this.checked) {
-        formButton.disabled = false;
-    } else {
-        formButton.disabled = true;
-    }
-});
 
 const texto1 = document.getElementById("span1");
 const texto2 = document.getElementById("span2");
@@ -59,12 +55,10 @@ const texto2 = document.getElementById("span2");
 texto1.addEventListener('click', function() {
     if(checkbox1.checked) {
         checkbox1.checked = false;
-        formButton.disabled = true;
     } else {
         checkbox1.checked = true;
-        formButton.disabled = false;
     }
-})
+});
 
 texto2.addEventListener('click', function() {
     var checkbox2 = document.getElementById("checkbox2");
@@ -73,7 +67,7 @@ texto2.addEventListener('click', function() {
     } else {
         checkbox2.checked = true;
     }
-})
+});
 
 function fecharPopup() {
     document.getElementById("popupcontato").style.display = "none";
