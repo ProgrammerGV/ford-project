@@ -41,20 +41,39 @@ function Enviar(event) {
     `;
 }
 
-const formButton = document.getElementById("botao")
+const formButton = document.getElementById("botao");
 
-var checkbox = document.querySelector("#checkbox");
+var checkbox1 = document.getElementById("checkbox1");
 
-checkbox.addEventListener( 'change', function() {
+checkbox1.addEventListener( 'change', function() {
     if(this.checked) {
-        console.log(this.checked)
         formButton.disabled = false;
     } else {
         formButton.disabled = true;
     }
-    
 });
 
+const texto1 = document.getElementById("span1");
+const texto2 = document.getElementById("span2");
+
+texto1.addEventListener('click', function() {
+    if(checkbox1.checked) {
+        checkbox1.checked = false;
+        formButton.disabled = true;
+    } else {
+        checkbox1.checked = true;
+        formButton.disabled = false;
+    }
+})
+
+texto2.addEventListener('click', function() {
+    var checkbox2 = document.getElementById("checkbox2");
+    if(checkbox2.checked) {
+        checkbox2.checked = false;
+    } else {
+        checkbox2.checked = true;
+    }
+})
 
 function fecharPopup() {
     document.getElementById("popupcontato").style.display = "none";

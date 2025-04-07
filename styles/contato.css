@@ -124,6 +124,15 @@ input:invalid {
     align-items: center;
 }
 
+.divcheckbox-item input:hover {
+    cursor: pointer;
+}
+
+.span1, .span2:hover {
+    cursor: pointer;
+}
+
+
 #botao:disabled {
     background: #ccc;
     cursor: not-allowed;
