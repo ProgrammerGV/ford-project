@@ -29,7 +29,6 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%; 
 }
 
 .formulario textarea {
@@ -47,6 +46,7 @@
     font-size: 16px;
     transition: all 0.3s ease;
     margin-top: 10px;
+    width: 200px;
 }
 
 .formulario input[type="submit"]:hover {
@@ -62,7 +62,6 @@
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Estilo do Popup */
 #popupcontato {
     display: none;
     position: fixed;
@@ -87,7 +86,7 @@
 
 .popup-icon {
     font-size: 50px;
-    color: #4CAF50; /* Verde */
+    color: #4CAF50; 
     margin-bottom: 15px;
 }
 
@@ -97,7 +96,7 @@
 }
 
 #popupcontatocontent button {
-    background-color: #1351d8; /* Azul Ford */
+    background-color: #1351d8; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -111,6 +110,25 @@ input:invalid {
     border-color: red;
 }
 
+.termosdeuso {
+    color: grey;
+}
+
+.divcheckbox {
+    margin-top: 20px;
+}
+
+.divcheckbox-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#botao:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+  }
 
 @media (max-width: 480px) {
     .formulario input, .formulario select, .formulario textarea {

@@ -41,6 +41,21 @@ function Enviar(event) {
     `;
 }
 
+const formButton = document.getElementById("botao")
+
+var checkbox = document.querySelector("#checkbox");
+
+checkbox.addEventListener( 'change', function() {
+    if(this.checked) {
+        console.log(this.checked)
+        formButton.disabled = false;
+    } else {
+        formButton.disabled = true;
+    }
+    
+});
+
+
 function fecharPopup() {
     document.getElementById("popupcontato").style.display = "none";
 }
