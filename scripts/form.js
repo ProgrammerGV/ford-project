@@ -40,7 +40,7 @@ function Enviar(event) {
         <h2>Obrigado, ${nome}!</h2>
         <p>Sua mensagem foi enviada com sucesso.</p>
         <button onclick="fecharPopup()">Fechar</button>
-    `;
+    `
     }
 }
 
